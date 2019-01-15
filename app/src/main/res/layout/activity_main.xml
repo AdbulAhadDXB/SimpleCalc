@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/operandEditText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:ems="10"
+        android:hint="First Operand"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/operandEditText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Second Operand"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD/(+)"/>
+       <!-- android:onClick="add"-->
+
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUB(-)"/>
+        <!-- android:onClick="sub"-->
+
+    <Button
+        android:id="@+id/btnDev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Div(/)" />
+        <!-- android:onClick="div"-->
+
+    <Button
+        android:id="@+id/btnMul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mul(*)" />
+        <!-- android:onClick="mult"-->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:ems="10"
+        android:text="Result"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:layout_gravity="center" />
+</LinearLayout>
